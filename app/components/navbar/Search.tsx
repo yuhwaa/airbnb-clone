@@ -28,6 +28,7 @@ const Search = () => {
                   className="
                     text-sm
                     font-semibold
+                    py-3
                     px-6
                   "
                 >
@@ -39,6 +40,7 @@ const Search = () => {
                     sm:block
                     text-sm
                     font-semibold
+                    py-3
                     px-6
                     border-x-[1px]
                     flex-1
@@ -46,6 +48,7 @@ const Search = () => {
                   "
                 >
                     Any Week
+                    
                 </div>
                 <div
                   className="
