@@ -1,9 +1,9 @@
 'use client';
+
 import { AiOutlineMenu } from 'react-icons/ai';
 import Avatar from '../Avatar';
-import MenuItem from './MenuItem';
-
 import { useCallback, useState } from 'react';
+import MenuItem from './MenuItem';
 
  const UserMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +33,7 @@ import { useCallback, useState } from 'react';
                     Airbnb your home
                 </div>
                 <div
-                 onClick={() => {toggleOpen}}
+                 onClick={toggleOpen}
                  className="
                    p-4
                    md:py-1
@@ -74,12 +74,18 @@ import { useCallback, useState } from 'react';
                 >
                     <div className="flex flex-col cursor-pointer">
                         <>
-                          <MenuItem />
+                          <MenuItem 
+                            onClick={() => {}}
+                            label="Login"
+                          />
+                          <MenuItem 
+                            onClick={() => {}}
+                            label="Sign up"
+                          />
                         </>
                     </div>
                 </div>
             )}
-
         </div>
     );
  }
